@@ -108,5 +108,6 @@ fun main(args: Array<String>) {
         build_native_image(projectName, ktfiles)
     } else {
         printlnc("Error: Invalid argument", red)
+        help()
     }
 }

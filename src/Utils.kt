@@ -2,6 +2,14 @@
 package utils
 
 import java.io.File
+
+fun help() {
+    printlnc("Usage: zeta [command]", white)
+    printlnc("Commands:", white)
+    printlnc("  run     - build and run the project", white)
+    printlnc("  init    - initialize a new project", white)
+    printlnc("  native  - build a native image", white)
+}
 // function that makes a directory
 fun mkdir(path: String) {
     val directory = File(path)
